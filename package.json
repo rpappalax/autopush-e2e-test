@@ -1,0 +1,20 @@
+{
+  "name": "autopush-e2e-test",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (http://nodeexamples.com/)",
+  "dependencies": {
+    "hapi": "9.3.1",
+    "inert": "*",
+    "portfinder": "0.4.0",
+    "web-push": "git://github.com/edmoz/web-push.git#add-vapid"
+  },
+  "devDependencies": {
+    "eslint": "1.6.0"
+  },
+  "license": "WTFPL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "eslint ."
+  }
+}
