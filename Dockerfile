@@ -12,6 +12,4 @@ RUN  apk add --update \
      && rm /var/cache/apk/*
 RUN npm install
 
-EXPOSE 8201
-
 CMD ["node", "./index.js"]
