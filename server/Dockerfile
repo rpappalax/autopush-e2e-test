@@ -12,4 +12,4 @@ RUN  apk add --update \
      && rm /var/cache/apk/*
 RUN npm install
 
-CMD ["node", "./index.js"]
+CMD ["node", "/app/index.js"]

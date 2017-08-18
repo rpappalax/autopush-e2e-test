@@ -2,7 +2,7 @@ from pypom import Page
 from selenium.webdriver.common.by import By
 
 
-class ItisaTrapPage(Page):
+class AutopushTestPage(Page):
 
     URL_TEMPLATE = 'http://localhost:8201'
 
