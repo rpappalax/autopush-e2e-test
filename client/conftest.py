@@ -17,9 +17,15 @@ def conf():
     return config
 
 
+@pytest.fixture()
+def capabilities(capabilities):
+    capabilities['marionette'] = True
+    return capabilities
+
+
 @pytest.fixture
 def firefox_options(firefox_options):
-    firefox_options.binary = '/Applications/FirefoxNightly.app/Contents/MacOS/firefox-bin' # noqa
+    #firefox_options.binary = '/Applications/FirefoxNightly.app/Contents/MacOS/firefox-bin' # noqa
     firefox_options.add_argument('-foreground')
     firefox_options.set_preference('browser.anchor_color', '#FF0000')
     return firefox_options

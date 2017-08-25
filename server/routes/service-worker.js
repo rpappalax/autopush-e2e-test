@@ -40,6 +40,7 @@ function popNotification(){
 
   self.onnotificationclick = function(){
     clients.openWindow(targetUrl);
+    //console.log('TITLE: ' + title + ' \n' + 'BODY: \n' +  body)
   };
 }
 
@@ -50,7 +51,7 @@ self.addEventListener('message', function(event) {
   // call to controller.postMessage(). Therefore, event.ports[0].postMessage() will trigger the onmessage
   // handler from the controlled page.
   // It's up to you how to structure the messages that you send back; this is just one example.
-  port.postMessage('SW echo: ' + event.data.text);
+  port.postMessage('YO...... SW echo: ' + event.data.text);
   if (event.data.command == 'pop'){
     targetUrl = event.data.url;
     popNotification();

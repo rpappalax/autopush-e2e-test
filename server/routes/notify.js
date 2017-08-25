@@ -19,8 +19,8 @@ module.exports = {
       var repeat = params.repeat || 1;
       var delay = params.delay || 15;
       var floodDelay = params.floodDelay || 0;
-      var vapid = {"audience": "https://people.mozilla.org/~ewong2/push-notification-test",
-                   "subject": "mailto:ewong@mozilla.com"};
+      var vapid = {"audience": "https://localhost:8201",
+                   "subject": "mailto:fte-ci@mozilla.com"};
 
       function replyWithPromise(promise) {
         promise.then(function (result) {

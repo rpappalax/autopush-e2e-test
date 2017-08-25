@@ -1,0 +1,7 @@
+node_modules/
+README.md
+*.sw[op]
+.DS_Store
+.git
+__pycache__
+**/*.pyc

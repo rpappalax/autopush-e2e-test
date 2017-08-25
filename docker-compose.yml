@@ -8,13 +8,14 @@ services:
      - "./server:/app"
      - "/app/node_modules"
 
-#  selenium-firefox:
-#      image: selenium/standalone-firefox-debug
-#      expose:
-#        - "4444"
-#      ports:
-#        - "5900"
-#      shm_size: 2g
-#      links:
-#        - "web:olympia.dev"
+  selenium-test:
+      build: "./client"
+      #expose:
+      #  - "4444"
+      ports:
+          #EXT:INT
+        - "5900"
+      shm_size: 2g
+      links:
+        - "web"
 
